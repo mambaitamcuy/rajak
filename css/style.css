@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+.nav .img{
+    width: 4rem;
+    border-radius: 20px;
+    margin-left: 6rem;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.0);
+    z-index: 999;
+    transition: background-color 0.4s ease-in-out;
+}
+
+.nav .link {
+    display: flex;
+    gap: 8rem;
+    color: #fff;
+    margin-right: 6rem;
+    align-items: center;
+}
+
+.link li {
+    list-style: none;
+    color: #fff;
+}
+
+.nav li a {
+    text-decoration: none;
+    color: #fff !important;
+}
+
+.content1 {
+    background: linear-gradient(to bottom right, #0f0f32,#171742, #2d2d66);
+    height: 100%;
+    display: flex;
+    z-index: -2;
+}
+
+.content1 .leftside {
+    display: flex;
+    justify-content: center;
+    padding-left: 7rem;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+}
+
+.leftside h1 {
+    color: #fff;
+    font-size: 52px;
+}
+
+.leftside h5 {
+    color: #fff;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-right: 7rem;
+}
+
+.rightside {
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+
+.rightside::after {
+    content: "";
+    position: absolute;
+    width: 18rem;
+    height: 18rem;
+    background-color: bisque;
+    z-index: 1;
+    border-radius: 50%;
+}
+
+.rightside img {
+    filter: drop-shadow(10px 15px 10px rgba(0, 0, 0, 0.3));
+    z-index: 99;
+}
+
+.content2 {
+    height: 100%;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin: 3rem 10rem;
+    padding-bottom: 20rem;
+}
+
+.content2 .wrapper .card {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 5px 15px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.card .card-img {
+    width: 16rem;
+    background-color: #1a9b1a !important;
+    overflow: hidden;
+    border-radius: 18px;
+}
+
+.card img {
+    width: 16rem;
+    transition: all .2s ease;
+}
+
+.card img:hover {
+    transform: scale(1.2);
+}
+
+.card .desk {
+    padding: 10px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.desk .card-title {
+    font-weight: bold;
+}
+
+.card .desk .desk1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.cta-wrap button {
+    outline: none;
+    border: none;
+    background-color: green;
+    width: 3rem;
+    color: #fff;
+    border-radius: 13px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.cta-wrap button:hover {
+    background-color: #1a9b1a;
+}
+
+.content3 {
+    height: 100%;
+    margin-top: 12rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to top left, bisque, rgb(192, 169, 140) );
+}
+
+
+
+.wrapper-about {
+    display: flex;
+    margin: 0 10rem;
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper-about p {
+    text-align: center;
+}
+
+.wrapper-about img {
+    width: 14rem;
+    border-radius: 20px;
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.content4 {
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact {
+    text-align: center;
+}
+
+.prompt {
+    margin-top: 2rem;
+    background-color: #fff;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+
+.prompt input {
+    background-color: #fff;
+    outline: none;
+    border: none;
+    margin-left: 5px;
+}
+
+.prompt .sub {
+    background-color: #1a9b1a;
+    width: 5rem;
+    color: #fff;
+    outline: none;
+    border: none;
+    padding: 4px 8px;
+    margin-right: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.sub a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.img-produk {
+    display: flex;
+    justify-content: center;
+}
+
+.img-produk img {
+    width: 20px;
+}
